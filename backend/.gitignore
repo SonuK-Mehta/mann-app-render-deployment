@@ -11,6 +11,7 @@ pnpm-lock.yaml
 # ---- Environment files ----
 .env
 .env.*
+*.env
 .env.production
 .env.development
 !.env.example
