@@ -1,0 +1,95 @@
+# ---- Node.js (backend + frontend Metro bundler) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ---- Environment files ----
+.env
+.env.*
+.env.production
+.env.development
+!.env.example
+
+# ---- Logs ----
+logs
+*.log
+*.log.*
+*.out
+*.err
+
+# ---- OS / IDE files ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ---- Expo / React Native ----
+.expo/
+.expo-shared/
+web-build/
+android/
+ios/
+*.apk
+*.aab
+
+# Metro bundler cache
+.expo
+.expo-shared
+.expo/*
+.expo-shared/*
+.expo-shared/.cache
+.expo-shared/assets.json
+.expo-shared/packager-info.json
+.expo-shared/settings.json
+
+# React Native build artifacts
+/build/
+*.iml
+*.hprof
+
+# Gradle / Android Studio
+.gradle/
+local.properties
+/android/app/build/
+android/app/debug.keystore
+
+# Xcode / iOS
+DerivedData/
+*.xcworkspace
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata
+!*.xcodeproj/project.xcworkspace
+xcuserdata/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+Pods/
+Podfile.lock
+
+# ---- Coverage / Testing ----
+coverage/
+.nyc_output/
+jest-*
+
+# ---- Temporary files ----
+.tmp/
+temp/
+.cache/
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# ---- Others ----
+dist/
+out/
+build/
+.expo/
