@@ -10,7 +10,6 @@ router.get('/', (req, res) => {
       'Maan App is a next-gen social platform where thoughts connect, voices matter, and ideas spark change.',
     environment: process.env.NODE_ENV || 'development',
     api_version: 'v1',
-    author: 'Sonu Mehta',
   });
 });
 
