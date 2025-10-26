@@ -12,6 +12,7 @@ import userRoutes from './routes/user.routes.js';
 import followRoutes from './routes/follow.routes.js';
 import tweetRoutes from './routes/tweet.routes.js';
 import messageRoutes from './routes/message.routes.js';
+import rootRouter from './routes/root.route.js';
 
 // Middleware
 import limiter from './middleware/rate-limiter.middleware.js';
@@ -63,6 +64,7 @@ const apiRouter = express.Router();
 app.use(configEnv.API_PREFIX || '/api/v1', apiRouter);
 
 // Mount your API routes here
+app.use('/', rootRouter);
 apiRouter.use('/auth', authRoutes);
 apiRouter.use('/users', userRoutes);
 apiRouter.use('/follows', followRoutes);
