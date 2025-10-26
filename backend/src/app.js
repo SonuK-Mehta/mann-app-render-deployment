@@ -12,7 +12,7 @@ import userRoutes from './routes/user.routes.js';
 import followRoutes from './routes/follow.routes.js';
 import tweetRoutes from './routes/tweet.routes.js';
 import messageRoutes from './routes/message.routes.js';
-import rootRouter from './routes/root.route.js';
+import rootRouter from './routes/root.routes.js';
 
 // Middleware
 import limiter from './middleware/rate-limiter.middleware.js';
