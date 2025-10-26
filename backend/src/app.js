@@ -56,6 +56,12 @@ if (configEnv.IS_DEV) {
 // ROUTES - MAKE SURE THESE ARE UNCOMMENTED!
 // ==========================================
 
+// Optional: suppress favicon.ico 404
+app.get('/favicon.ico', (req, res) => res.status(204));
+
+// Root route - welcome message
+app.use('/', rootRouter);
+
 // Health check routes - mounted at /health
 app.use('/health', healthRoutes);
 
@@ -64,7 +70,6 @@ const apiRouter = express.Router();
 app.use(configEnv.API_PREFIX || '/api/v1', apiRouter);
 
 // Mount your API routes here
-app.use('/', rootRouter);
 apiRouter.use('/auth', authRoutes);
 apiRouter.use('/users', userRoutes);
 apiRouter.use('/follows', followRoutes);
